@@ -1,0 +1,40 @@
+<div class="app">
+  <el-row :gutter="20">
+    <el-col :span="4" :offset="6">
+      <div class="item">姓名</div>
+    </el-col>
+    <el-col :span="8">
+      <el-input placeholder="请输入姓名" v-model="name"/>
+    </el-col>
+  </el-row>
+  <el-row :gutter="20">
+    <el-col :span="4" :offset="6">
+      <div class="item">时长</div>
+    </el-col>
+    <el-col :span="8">
+      <el-input v-model="minDuration">
+        <template slot="prepend">不少于</template>
+        <template slot="append">秒</template>
+      </el-input>
+    </el-col>
+  </el-row>
+  <el-row :gutter="20">
+    <el-col :span="4" :offset="6">
+      <div class="item">次数</div>
+    </el-col>
+    <el-col :span="8">
+      <el-input v-model="minCount">
+        <template slot="prepend">不少于</template>
+        <template slot="append">次</template>
+      </el-input>
+    </el-col>
+  </el-row>
+  <h2>共查询到 {{ filteredCount }} 条结果{{ filteredCount ? '：' : '。' }}</h2>
+  <el-table v-show="filteredCount" :data="filteredResult" stripe
+    :default-sort="{prop: 'count', order: 'descending'}">
+    <el-table-column prop="id" label="号码" sortable align="center"
+      :sort-orders="['ascending', 'descending']"/>
+    <el-table-column prop="count" label="通话次数" sortable align="center"
+      :sort-orders="['ascending', 'descending']"/>
+  </el-table>
+</div>

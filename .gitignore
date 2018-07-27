@@ -1,4 +1,5 @@
-demo
 onlineData
 output
 source
+node_modules
+package-lock.json

@@ -1,0 +1,23 @@
+{
+  "name": "neo4j-research",
+  "version": "1.0.0",
+  "description": "",
+  "main": "filter.js",
+  "scripts": {
+    "filter": "node ./filter.js",
+    "demo": "electron ./demo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shigma/neo4j-research.git"
+  },
+  "keywords": [
+    "neo4j"
+  ],
+  "author": "shigma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shigma/neo4j-research/issues"
+  },
+  "homepage": "https://github.com/Shigma/neo4j-research#readme"
+}

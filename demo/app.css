@@ -1,0 +1,52 @@
+@font-face {
+    font-family: source-san-sans-CN;
+    src: url(./assets/SourceHanSansCN-Normal.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: source-san-sans-CN;
+    src: url(./assets/SourceHanSansCN-Bold.otf);
+    font-weight: bold;
+}
+
+body, input, button {
+    font-family: source-san-sans-CN;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 32px 80px 40px;
+    padding: 12px 16px 6px;
+    border-bottom: solid gray 4px;
+}
+
+.app {
+    margin: 0 80px;
+}
+
+.el-row {
+    margin-bottom: 20px;
+}
+
+.item {
+    font-size: 20px;
+    padding: 5px;
+    text-align: -webkit-center;
+}
+
+.app h2 {
+    font-size: 20px;
+    margin: 16px 0 16px;
+    padding: 12px 16px 0px;
+}
+
+.el-table {
+    padding: 0 48px;
+}
